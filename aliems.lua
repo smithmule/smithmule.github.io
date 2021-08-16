@@ -1,5 +1,5 @@
 -- title:  ship
--- author: beans
+-- author: smithmule
 -- desc:   lernin
 -- script: lua
 
