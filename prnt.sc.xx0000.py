@@ -1,13 +1,13 @@
-#prnt.sc/aa0000 v0.1 by smithmule
+#prnt.sc/aa0000 v0.2 by smithmule
 import webbrowser  
 import time
 
 lets = "aa"
-nums = 1323
+nums = 1
 
 while True:
-    #print("http://prnt.sc/"+lets+str(nums))
-    url = 'http://prnt.sc/'+lets+str(nums)
+    #url = 'http://prnt.sc/'+lets+str(nums)
+    url = 'http://prnt.sc/'+lets+'%04d' % nums
     print(url)
     webbrowser.open(url, new=2, autoraise=True)
     time.sleep(1)
