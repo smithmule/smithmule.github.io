@@ -1,4 +1,4 @@
-#prnt.sc/aa0000 v0.2 by smithmule
+#prnt.sc/aa0000 v0.3 by smithmule
 import webbrowser  
 import time
 
@@ -13,5 +13,5 @@ while True:
     time.sleep(1)
     nums += 1
     if nums > 9999:
-        nums = 1111
+        nums = 1
         lets = ab
