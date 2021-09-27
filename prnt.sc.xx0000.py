@@ -14,4 +14,4 @@ while True:
     nums += 1
     if nums > 9999:
         nums = 1
-        lets = ab
+        lets = "ab"
