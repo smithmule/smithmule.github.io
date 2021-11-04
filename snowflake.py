@@ -2,7 +2,7 @@ import turtle
 import random
 pat=turtle.Turtle()
 turtle.Screen().bgcolor("lightgrey")
-colours=["cyan","purple","white","red","yellow","blue","green","orange"]
+colours=["cyan","purple","white","red","yellow","blue","green","orange","pink"]
 pat.color(random.choice(colours))
 pat.penup()
 pat.forward(90)
