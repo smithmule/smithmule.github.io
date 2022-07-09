@@ -1,17 +1,20 @@
-#prnt.sc/aa0000 v0.3 by smithmule
-import webbrowser  
+#prnt.sc/aa0000 v0.4 by smithmule and github copilot
+import random
 import time
+import webbrowser
 
-lets = "aa"
-nums = 1
+# create a string of two random letters in a variable called letters
+letters = ''.join(random.sample('abcdefghijklmnopqrstuvwxyz', 2))
+# create a number between 1 and 1000 in a variable called number
+number = random.randint(1, 1000)
 
-while True:
-    #url = 'http://prnt.sc/'+lets+str(nums)
-    url = 'http://prnt.sc/'+lets+'%04d' % nums
+for i in range(0, 2):
+    url = 'http://prnt.sc/'+letters+'%04d' % number
     print(url)
-    webbrowser.open(url, new=2, autoraise=True)
+    #open url in browser
+    webbrowser.open(url)
+    number += 1
     time.sleep(1)
-    nums += 1
-    if nums > 9999:
-        nums = 1
-        lets = "ab"
+    if number > 9999:
+        letters = ''.join(random.sample('abcdefghijklmnopqrstuvwxyz', 2))
+        number = 1
